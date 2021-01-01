@@ -27,4 +27,4 @@ Raw disk images of FAT partitions can also be used easily via the Linux `loop de
 ```
 $ mount -t msdos -o loop,uid={your_uid},gid={your_gid} fat_disk.img /mnt/c_drive
 ```
-Using a mount command like this, you can copy whatever disk contents you need into your disk image, then share that disk image to the DOS client with maximal compatibility. May DOS applications will run fine and at reasonable speed from the shared/mapped drive.
+Using a mount command like this, you can copy whatever disk contents you need into your disk image, then share that disk image to the DOS client with maximal compatibility. Many DOS applications will run fine and at reasonable speed from the shared/mapped drive.
