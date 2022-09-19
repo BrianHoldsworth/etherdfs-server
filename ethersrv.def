@@ -1,0 +1,5 @@
+# List of root folders to share
+ETHERSRV_SHARES="/mnt/dos_c /mnt/dos_d"
+
+# Ethernet interface to operate on
+ETHERSRV_INTERFACE="eth0"

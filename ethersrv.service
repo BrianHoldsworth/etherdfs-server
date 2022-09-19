@@ -1,0 +1,12 @@
+[Unit]
+Description=EtherDFS Server
+Wants=network-online.target
+After=network.target network-online.target 
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/ethersrv
+ExecStart=/usr/sbin/ethersrv-linux -f ${ETHERSRV_INTERFACE} $ETHERSRV_SHARES
+
+[Install]
+WantedBy=multi-user.target
