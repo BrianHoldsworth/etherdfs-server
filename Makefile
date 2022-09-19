@@ -15,7 +15,7 @@ ethersrv-linux: ethersrv-linux.c fs.c fs.h lock.c lock.h debug.h
 clean:
 	rm -f ethersrv-linux *.o
 
-install:
+install: ethersrv-linux
 	install -m 755 ethersrv-linux /usr/sbin
 	install -m 644 ethersrv.service /lib/systemd/system
 	install -m 644 -T ethersrv.def /etc/default/ethersrv
